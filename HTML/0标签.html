@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+
+<body>
+<form action="">
+    <!--<br> 换行-->
+    用户名: <input type="text" name="userName"> <br>
+    密码: <input type="password" name="userPwd"> <br>
+    <!-- email 提供了默认的电子邮箱完整验证,: 必须包含@符号和服务器名称, 不满足条件则会阻止当前数据提交-->
+    邮箱: <input type="email" name="email"> <br>
+    <!--tel 并不是用来实现验证的, 它的本质是为了能在移动端打开数字键盘,则限制了只能输入数字,注意是移动端-->
+    电话: <input type="tel"> <br>
+
+    <!--number: 只能输入数字(包括小数点), 不能输入其它字符, max:最大值,min:最小值, value: 默认值-->
+    数量: <input type="number" value="60" max="100" min="0"> <br>
+
+    <!--search 可以提供更人性化的输入体验-->
+    请输入商品名称
+
+
+    <!--数据提交-->
+    <input type="submit">
+</form>
+
+</body>
+</html>
+
+<!--表单的使用
+<input type="value">
+
+
+button：无缺省行为按钮。
+checkbox： 复选框。必须使用 value 属性定义此控件被提交时的值。使用 checked 属性指示控件是否被选择。也可以使用 indeterminate 指示复选框在一种不确定状态（大多数平台上，显示为一条穿过复选框的水平线）。
+
+color：HTML5 用于指定颜色的控件。
+date：HTML5 用于输入日期的控件（年，月，日，不包括时间）。
+datetime：HTML5 基于 UTC 时区的日期时间输入控件（时，分，秒及几分之一秒）。
+datetime-local：HTML5 用于输入日期时间控件，不包含时区。
+email：HTML5 用于编辑 e-mail 的字段。 合适的时候可以使用 :valid 和 :invalid CSS 伪类。
+
+file：此控件可以让用户选择文件。使用 accept 属性可以定义控件可以选择的文件类型。
+
+hidden：不显示在页面上的控件，但它的值会被提交到服务器。
+
+image：图片提交按钮。必须使用 src 属性定义图片的来源及使用 alt 定义替代文本。还可以使用 height 和 width 属性以像素为单位定义图片的大小。
+
+month：HTML5 用于输入年月的控件，不带时区。
+
+number: HTML5 用于输入浮点数的控件。
+password：一个值被遮盖的单行文本字段。使用 maxlength 指定可以输入的值的最大长度 。
+radio：单选按钮。必须使用 value 属性定义此控件被提交时的值。使用checked 必须指示控件是否缺省被选择。在同一个”单选按钮组“中，所有单选按钮的 name 属性使用同一个值； 一个单选按钮组中是，同一时间只有一个单选按钮可以被选择。
+
+range：HTML5 用于输入不精确值控件。如果未指定相应的属性，控件使用如下缺省值：
+        min：0
+        max：100
+        value：min + (max-min)/2，或当 max 小于 min 时使用 min
+        step：1
+
+
+reset：用于将表单所内容设置为缺省值的按钮。
+search：HTML5用于输入搜索字符串的单行文本字段。换行会被从输入的值中自动移除。
+submit：用于提交表单的按钮。
+
+tel：HTML5 用于输入电话号码的控件；换行会被自动从输入的值中移除A，但不会执行其他语法。
+        可以使用属性，比如 pattern 和 maxlength 来约束控件输入的值。恰当的时候，可以应用 :valid 和 :invalid CSS 伪类。
+
+text：单行字段；换行会将自动从输入的值中移除。
+time：HTML5 用于输入不含时区的时间控件。
+
+url：HTML5 用于编辑URL的字段。
+        The user may enter a blank or invalid address. 换行会被自动从输入值中移队。
+        可以使用如：pattern 和 maxlength 样的属性来约束输入的值。 恰当的时候使可以应用 :valid 和 :invalid CSS 伪类。
+
+week：HTML5 用于输入一个由星期-年组成的日期，日期不包括时区。
+-->

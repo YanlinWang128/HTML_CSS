@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>链接</title>
+</head>
+<body>
+<base target="_blank">
+<!--设置默认跳转格式-->
+<p>
+    <a href="https://www.baidu.com" target="_self">百度一下</a> <br>
+    <a href="https://www.baidu.com">百度一下</a> <br>
+
+    a标签: 控制页面跳转, 可以跳转到一个页面或者URL, 或者指定锚点<br>
+    target 属性, _blank,  空白页跳转, _self(默认)当前页跳转<br>
+    title 属性, 鼠标悬停是的提示文本, 和img类似 <br>
+
+    1. 跳转到指定位置是没有过渡动画的,直接跳转到指定位置<br>
+    2. a标签除了可以跳转到当前界面的指定位置外, 还可以跳转到其它界面的指定位置<br>
+    3. 在链接后面加上#id  即可<br>
+    <a href="img.html#image">跳转到另一个网页的指定位置, 直接后面加上#id</a> <br>
+    <a href="#bottom">跳转到底部</a>
+
+    <h2>base标签</h2>
+    base标签专门用来统一制定当前网页中所有的超链接(a标签)默认如何打开, 注意局部大于整体
+
+    <h2>假链接</h2>
+    在企业开发前期, 有些链接界面没有写出, 所以我们不知道该跳转到什么地方, 所以只能使用假链接来代替,完成后用真链接代替
+
+    <h3>假链接格式</h3>
+    1.  #   返回顶部  <a href="#">返回顶部</a> <br>
+    2. JavaScript: 不会返回顶部, 假链接不会跳转<br>
+
+
+    <a href="JavaScript:" target="_self">假链接</a> <br>
+
+
+<h3 id="bottom">底部</h3>
+</p>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表标签</title>
+</head>
+<body>
+<p>
+    <h2>列表标签</h2>
+    给一堆数据添加列表语义, 就是告诉浏览器这堆数据是一个整体<br>
+    <h3>列表分类</h3>
+    1. 无序列表(最多) (unordered list) <br>
+        这一堆数据没有先后之分<br>
+        ul和li是一个整体, 一个组合, 所以一般情况下ul和li一起出现
+        无序标签可以嵌套, ul中有li, li中也可以有ul
+    <ul><!-- ul为unordered list 缩写-->
+        <li>需要显示的条目</li>
+        <!--li 为list item的缩写-->
+        <li>需要显示的条目</li>
+        <li>需要显示的条目</li>
+
+    </ul>
+    2. 有序列表(最少) (ordered list)<br>
+<!--  ol>li* 4  tab-->
+<ol>
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+    <li>four</li>
+</ol>
+    3. 定义列表(其次) (definition list)<br>
+<!--  dl>dt*3 tab-->
+<!--
+dt(definition title) 定义列表中的标题
+dd(definition description) 定义标题对应的描述
+
+定义列表的作用,
+
+定义列表应用场景
+1. 网站尾部相关信息
+2. 图文混排
+
+注意:
+一个dt可以没有对应的dd, 也可以有多个dd,
+dl和dt,dd是一个组合标签
+
+和li标签一样, 需要丰富的界面时, 我们可以在dt, 和dd中继续添加其他标签
+-->
+<dl>
+    <!--通过dt,dd来描述一条数据-->
+
+    <dt>
+        <img src="../image/panda.jpg" alt=" " width="150px">
+    </dt>
+    <dd>
+        <h2>Frank</h2>
+        <p>描述文字</p>
+        <!--在css中改变样式-->
+    </dd>
+
+</dl>
+
+
+</p>
+<!--
+列表快捷方式, ul>li*3  tab
+-->
+
+</body>
+</html>
